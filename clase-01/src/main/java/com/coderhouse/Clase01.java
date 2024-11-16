@@ -9,7 +9,7 @@ public class Clase01 {
 		Byte hola = 0;
 		String holarrr= "dss";
 		
-		
+		//syso
 	}
 
 }
