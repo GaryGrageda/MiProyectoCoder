@@ -9,7 +9,8 @@ public class Clase01 {
 		Byte hola = 0;
 		String holarrr= "dss";
 		
-		//syso
+		System.out.println(holarrr+"33333dsdsd");
+		
 	}
 
 }
