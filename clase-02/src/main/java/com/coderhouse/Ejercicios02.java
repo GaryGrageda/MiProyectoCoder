@@ -164,21 +164,207 @@ public class Ejercicios02 {
 		System.out.println("El nivel de peligro del volcan es " + nivelPeligro);
 		
 //		16. **Asigna un día de la semana** según un número del 1 al 7.
+		int numEjer16 = 2;
+		String dia = "";
 		
+		switch (numEjer16){
+			case 1:
+				dia = "Lunes";
+				break;
+			case 2:
+				dia = "Martes";
+				break;
+			case 3:
+				dia = "Miercoles";
+				break;
+			case 4:
+				dia = "Jueves";
+				break;
+			case 5:
+				dia = "Viernes";
+				break;
+			case 6:
+				dia = "Sabado";
+				break;
+			case 7:
+				dia = "Domingo";
+				break;
+			default:
+				dia = "Inexistente";
+				break;
+		}
 		
+		System.out.println("El dia es: " + dia);
 		
 //		17. **Muestra el nombre de un mes** según un número del 1 al 12.
+		int numEjer17 = 11;
+		String mes = "";
+		
+		switch (numEjer17){
+			case 1:
+				mes = "Enero";
+				break;
+			case 2:
+				mes = "Febrero";
+				break;
+			case 3:
+				mes = "Marzo";
+				break;
+			case 4:
+				mes = "Abril";
+				break;
+			case 5:
+				mes = "Mayo";
+				break;
+			case 6:
+				mes = "Junio";
+				break;
+			case 7:
+				mes = "Julio";
+				break;
+			case 8:
+				mes = "Agosto";
+				break;
+			case 9:
+				mes = "Septiembre";
+				break;
+			case 10:
+				mes = "Octubre";
+				break;
+			case 11:
+				mes = "Noviembre";
+				break;
+			case 12:
+				mes = "Diciembre";
+				break;
+			default:
+				mes = "Inexistente";
+				break;
+		}
+		System.out.println("El mes es: " + mes);
+		
 //		18. **Determina el nombre de una estación del año** según un número (1: invierno, 2: primavera, 3: verano, 4: otoño).
+		int numEjer18 = 4;
+		String estacion = "";
+		
+		switch (numEjer18){
+			case 1:
+				estacion = "invierno";
+				break;
+			case 2:
+				estacion = "primavera";
+				break;
+			case 3:
+				estacion = "verano";
+				break;
+			case 4:
+				estacion = "otoño";
+				break;
+			default:
+				estacion = "Inexistente";
+				break;
+		}
+		
+		System.out.println("La estación del año es: " + estacion);
+		
 //		19. **Calcula operaciones aritméticas básicas** (suma, resta, multiplicación, división) según un operador ingresado (`+`, `-`, `*`, `/`).
+		float num1 = 2.0f;
+		float num2 = 22.0f;
+		float resultado = 0.0f;
+		char operacion = '*';
+		
+		switch (operacion){
+			case '+':
+				resultado = num1 + num2;
+				break;
+			case '-':
+				resultado = num1 - num2;
+				break;
+			case '*':
+				resultado = num1 * num2;
+				break;
+			case '/':
+				resultado = num1 / num2;
+				break;
+			default:
+				resultado = -1.0f;
+				break;
+		}
+		
+		System.out.println("El resultado de la operación es: " + resultado);
+		
 //		20. **Verifica el tipo de fruta** según su código: 1: manzana, 2: plátano, 3: naranja, 4: uva.
+		int numEjer20 = 4;
+		String fruta = "";
+		
+		switch (numEjer20){
+			case 1:
+				fruta = "manzana";
+				break;
+			case 2:
+				fruta = "platano";
+				break;
+			case 3:
+				fruta = "naranja";
+				break;
+			case 4:
+				fruta = "uva";
+				break;
+			default:
+				fruta = "Inexistente";
+				break;
+		}
+		
+		System.out.println("La fruta es: " + fruta);
+		
 //		21. **Verifica si un número es par o impar** usando un operador ternario.
+		int numEjer21 = 4;
+		String parImpar = (numEjer21 % 2 == 0) ? "Par" : "Impar";
+		System.out.println("El número es " + parImpar);
+		
 //		22. **Determina si una persona es mayor de edad** con un operador ternario.
+		int numEjer22 = 17;
+		System.out.println("La persona es " + ((numEjer22 >= 18) ? "Mayor" : "Menor"));
+		
 //		23. **Asigna el valor "Positivo" o "Negativo"** a una variable según el valor de un número.
+		int numEjer23 = 0;
+		String positivoONegativo = (numEjer23 > 0) ? "Positivo" : "Negativo";
+		System.out.println("El número es " + ((numEjer23 == 0) ? "" : positivoONegativo)); // El cero no puede ser positivo ni negativo, no muesto valor
+		
 //		24. **Calcula el mayor de dos números** usando un operador ternario.
+		int numero1 = 0;
+		int numero2 = 0;
+		int numeroMayor = (numero1 > numero2) ? numero1 : numero2;
+		System.out.println("El número mayor es " + ((numero1 == numero2) ? "" : numeroMayor)); // SI ambos son iguales no muestro valor		
+		
 //		25. **Asigna un valor "Aprobado" o "Reprobado"** a una variable en función de una nota.
+		int numEjer25 = 7;
+		String aprobadoReprobado = (numEjer25 > 6) ? "Aprobado" : "Reprobado";
+		System.out.println("El valor es " + aprobadoReprobado);
+		
 //		26. **Genera un número aleatorio entre 1 y 10** y muestra un mensaje si es mayor que 5.
+		int numEjer26 = (int) (Math.random() * 10) + 1;
+		if (numEjer26 > 5) {
+		    System.out.println("El número " + numEjer26 + " es mayor que 5.");
+		}
+		
 //		27. **Simula el lanzamiento de un dado** con `Math.random()` y muestra el resultado.
+		int numEjer27 = (int) (Math.random() * 6) + 1;
+		System.out.println("Salió el dado de " + numEjer27 + " caras");
+		
 //		28. **Genera un número aleatorio entre 0 y 100** y determina si es mayor, menor o igual a 50.
+		int numEjer28 = (int) (Math.random() * 100);
+		
+		if(numEjer28 == 50) {
+			System.out.println("El numero aleatorio fue igual a 50...: " + numEjer28);
+		}else {
+			if(numEjer28 < 50) {
+				System.out.println("El numero aleatorio fue menor a 50...: " + numEjer28);
+			}else {
+				System.out.println("El numero aleatorio fue mayor a 50...: " + numEjer28);
+			}
+		}
+		
 //		29. **Simula una moneda** (cara o cruz) usando `Math.random()`.
 //		30. **Genera un número aleatorio entre 1 y 100** y determina si es múltiplo de 10.
 //		31. **Determina si un número es positivo, negativo o cero** usando un operador ternario.
