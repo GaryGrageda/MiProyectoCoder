@@ -4747,3 +4747,54 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-11 11:11:18.281
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-11 14:32:13.235
+!MESSAGE An exception occurred during push on URI https://github.com/GaryGrageda/MiProyectoCoder.git: https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-01-11 14:32:13.238
+!MESSAGE Can't connect to any repository: https://github.com/GaryGrageda/MiProyectoCoder.git (https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-11 14:34:06.445
+!MESSAGE An exception occurred during push on URI https://github.com/GaryGrageda/MiProyectoCoder.git: https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-01-11 14:34:06.448
+!MESSAGE Can't connect to any repository: https://github.com/GaryGrageda/MiProyectoCoder.git (https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2025-01-11 14:36:59.418
+!MESSAGE An exception occurred during push on URI https://github.com/GaryGrageda/MiProyectoCoder.git: https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-01-11 14:36:59.421
+!MESSAGE Can't connect to any repository: https://github.com/GaryGrageda/MiProyectoCoder.git (https://github.com/GaryGrageda/MiProyectoCoder.git: not authorized)
