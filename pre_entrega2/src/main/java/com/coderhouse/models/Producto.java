@@ -3,6 +3,8 @@ package com.coderhouse.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -20,6 +22,7 @@ public class Producto {
 	
 	private double precio;
 	
+	@JsonBackReference
 	@ManyToMany(fetch =FetchType.EAGER)
 	@JoinTable(
 				name ="ventas", 

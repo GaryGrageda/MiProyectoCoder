@@ -3,6 +3,8 @@ package com.coderhouse.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -19,6 +21,7 @@ public class Cliente {
 	@Column(unique = true, nullable = false)
 	private String dni;
 	
+	@JsonBackReference
 	@ManyToMany(mappedBy = "clientes", fetch = FetchType.EAGER)
 	private List<Producto> productos = new ArrayList<>();
 
