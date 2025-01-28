@@ -23,9 +23,9 @@ public class Cliente {
 	@Column(unique = true, nullable = false)
 	private String dni;
 	
-	@JsonBackReference
-	@ManyToMany(mappedBy = "clientes", fetch = FetchType.EAGER)
-	private List<Producto> productos = new ArrayList<>();
+//	@JsonBackReference
+//	@ManyToMany(mappedBy = "clientes", fetch = FetchType.EAGER)
+//	private List<Producto> productos = new ArrayList<>();
 
 	public Cliente() {
 		super();

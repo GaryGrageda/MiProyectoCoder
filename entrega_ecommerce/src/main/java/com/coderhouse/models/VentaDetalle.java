@@ -11,10 +11,15 @@ public class VentaDetalle {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Id
     @ManyToOne
     @JoinColumn(name = "id_venta", nullable = false)
     private Venta venta;
 
+    @ManyToOne
+    @JoinColumn(name = "id_producto", nullable = false)
+    private Producto producto;
+    
     @Column(nullable = false)
     private Integer cantidadPedida;
 

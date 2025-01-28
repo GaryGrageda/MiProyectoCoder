@@ -33,7 +33,6 @@ public class VentaService {
 		Venta venta = ventaRepository.findById(id)
 				.orElseThrow(() -> new IllegalArgumentException("Venta no encontrado"));
 		venta.setCliente(ventaDetails.getCliente());
-		venta.setProducto(ventaDetails.getProducto());
 		return ventaRepository.save(venta);
 	}
 

@@ -23,15 +23,15 @@ public class Producto {
 	private int stock;
 	
 	private double precio;
-	
-	@JsonBackReference
-	@ManyToMany(fetch =FetchType.EAGER)
-	@JoinTable(
-				name ="ventas", 
-				joinColumns = @JoinColumn(name= "id_producto"), 
-				inverseJoinColumns = @JoinColumn(name = "id_cliente")
-			)
-	private List<Cliente> clientes = new ArrayList<>();
+//	
+//	@JsonBackReference
+//	@ManyToMany(fetch =FetchType.EAGER)
+//	@JoinTable(
+//				name ="ventas", 
+//				joinColumns = @JoinColumn(name= "id_producto"), 
+//				inverseJoinColumns = @JoinColumn(name = "id_cliente")
+//			)
+//	private List<Cliente> clientes = new ArrayList<>();
 
 	public Producto() {
 		super();
